@@ -1,5 +1,27 @@
 
 function Main(_id) {
+    toogle = false;
+    const why_choose_us_list = $("#why_choose_us_list");
+    TweenLite.set(why_choose_us_list, { css: { display:"none" }});
+
+    const see_more_btn = $("#see_more_btn");
+    see_more_btn.click(function(){
+        if(this.toggle === undefined){
+            this.toggle = false;
+        }
+        this.toggle = !this.toggle;
+        if(this.toggle){
+            TweenLite.set(why_choose_us_list, { css: { display:"none",opacity:0 }});
+
+        } else {
+            TweenLite.set(why_choose_us_list, { css: { display:"flex",opacity:0 }});
+            TweenLite.to(why_choose_us_list, { opacity:1, duration:1 });
+        }
+        
+
+
+      });
+  
     const menuactive = $("#mainmenu li");
     const m = $(menuactive[_id]).find('.menu1').children()[2];
     const label = $(menuactive[_id]).find('.menu1').children()[0];
