@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-SemiBold';
+    src: url('../fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+}
+
+body{
+    font-family: 'SourceSansPro-Regular';
+    font-size: 18px;
+}
+.h1,.h2,.h3,.h5,.h6{
+    font-family: 'SourceSansPro-SemiBold';
+    font-size: 1.7em;
+}
+
+.semi-bold {
+    font-family: 'SourceSansPro-SemiBold';
+    font-size: 18px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    li{
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+}
+p{
+    line-height: 28px;
+}
+
+.text-primary {
+    color:#3C7AFA;
+}
+.bg-primary {
+    background-color:#3C7AFA;
+}
+
+.user-cards-color {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    .user-image {
+        position: absolute;
+        z-index: 1;
+        .user-name{
+            position: absolute;
+            left: 100px;
+            top: 8px;
+        }
+    }
+    .background-wrapper{
+        position: relative;
+        width: 100%;
+        height:300px;
+        z-index: 0;
+        padding:20px;
+        .wrapper-holding{
+            width: calc(100% - 90px);
+            height: 226px;
+            position: absolute;
+            left: 51px;
+            top: 42px;
+            background-color: rgba(60,122,224,.3);
+            .height-text {
+                height: 188px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .text-rotate {
+        position: absolute;
+        left: -15px;
+        top: 20px;
+        transform: 
+          translate(0px, 110px)
+          rotate(-90deg);
+      }
+}
+
+.sanpro-20 {
+    font-family: SourceSansPro-SemiBold;
+    font-size: 20px;
+}
+.sanpro-30 {
+    font-family: SourceSansPro-SemiBold;
+    font-size: 30px;
+}
+.f-16 {
+    font-size: 16px;
+}
+textarea
+{
+  width:100%;
+  height: 100px;
+  resize: false;
+  ::placeholder{
+      color: black;
+  }
+}
+.h-58 {
+    height:50px;
+}
+input {
+    padding:10px;
+}
+
+.fnt-55{
+    font-size: 55px;;
+}
+.dashed-line {
+    display: block;
+    height:1px;
+    width:100px;
+    background-color: black;
+}
+.text-light-grey{
+    color: #727272;
+}
+.mt-5{
+    margin-top:1em;
+}
+.pp-4{
+    padding:2em;
+}
+
+.ui-pagination{
+    li{
+        margin: 0px;
+        padding: 10px;
+    }
+}
+
+.footer {
+    font-size: 14px;
+    color:white;
+    height: auto;
+    background-color: #17172D;
+}
+
+.contact-us-bg {
+    background-image: url("../../assets/images/contactus.png");
+    height: 532px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-us-bg {
+    background-image: url("../../assets/images/aboutus.png");
+    height: 402px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-us {
+    font-size: 2em;
+}
+
+.about-us {
+    font-size: 2em;
+    height:250px;
+}
+
+.light-blue-box {
+    background-color: #E9F0FF;
+    width: 357px;
+    height: 317px;
+}
+.light-blue-box-1 {
+    background-color: #F6FAFF;
+    width: 100%;
+    height: auto;
+}
+.bg-blue {
+    background-color: #3C7AFA;
+}
+.bg-blue-text {
+    color: #3C7AFA;
+}
+.contact-mobile {
+    color: white;
+    p{
+        line-height: 20px;
+    }
+}
+
+.title {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 12px;
+    color:rgba(255,255,255,.5)
+}
+.menu-active {
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 4px;
+    top:-12px;
+    background-color: #3C7AFA;
+}
+.hr-line {
+    background-color: rgba(255,255,255,.5);
+}
+
+.hrr-line{
+    display: block;
+    width: 1px;
+    height: 19px;
+    background-color: rgba(255,255,255,.5);;
+}
+
+.menu1 {
+    width: 150px;
+    position: relative;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.banner-container{
+    position: relative;
+    height:450px;
+    margin-bottom: 10px;
+    .banner-holder {
+        position: absolute;
+        width: 100%;
+        height:330px;
+    }
+    .nav-bar {
+        position: absolute;
+    }
+}
+
+#banner_list{
+    position: relative;
+}
+
+.bannerimage {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    .bannerimage-1{
+        background-image: url("../images/banner_1.png");
+        width: 100%;
+        height: auto;
+        min-height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bannerimage-2{
+        background-image: url("../images/banner_2.png");
+        width: 100%;
+        height: auto;
+        min-height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bannerimage-3{
+        background-image: url("../images/banner_3.png");
+        width: 100%;
+        height: auto;
+        min-height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content-1 {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 50px;
+        left: 100px;
+        color: white;
+    }
+}
+
+
+
+
+.circle-with-number-r{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff4357;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-with-number-m{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #c143ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.our-courses-bg {
+    background-image: url("../images/ourcourses.png");
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.workshops-bg {
+    background-image: url("../images/workshops.png");
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutus-bg{
+    background-image: url("../images/aboutus.png");
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactus-bg{
+    background-image: url("../images/contactus.png");
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content-lbl{
+    display: block;
+}
+
+.cnt-display{
+    position: absolute;
+}
+
+#mobile-menu{
+    position: relative;
+    top:-199px;
+    right: 0px;
+    #overlay-button {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        padding: 26px 11px;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+        span {
+            height: 4px;
+            width: 35px;
+            border-radius: 2px;
+            background-color: white;
+            position: relative;
+            display: block;
+            transition: all .2s ease-in-out;
+            &:before {
+              top: -10px;
+              visibility: visible;
+            }
+            &:after {
+              top: 10px;
+            }
+            &:before, &:after {
+                height: 4px;
+                width: 35px;
+                border-radius: 2px;
+                background-color: white;
+                position: absolute;
+                content: "";
+                transition: all .2s ease-in-out;
+            }
+          }
+          &:hover span, &:hover span:before, &:hover span:after {
+            background: #333332;
+          }
+      }
+      
+      input[type=checkbox] {
+        display: none;
+      }
+      
+      input[type=checkbox]:checked ~ #overlay {
+        visibility: visible;
+      }
+      
+      input[type=checkbox]:checked ~ #overlay-button {
+        &:hover span, span{
+          background: transparent;
+        }
+        span {
+          &:before {
+            transform: rotate(45deg) translate(7px, 7px);
+            opacity: 1;
+          }
+          &:after {
+            transform: rotate(-45deg) translate(7px, -7px);
+          }
+        }
+      }
+      
+      #overlay {
+        width: 94%;
+        background: #ec6451;
+        z-index: 2;
+        visibility: hidden;
+        position: fixed;
+        top: 100px;
+        &.active {
+          visibility: visible;
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          padding-left: 0;
+          list-style-type: none;
+          li {
+            padding: 1em;
+            a {
+              color: white;
+              text-decoration: none;
+              font-size: 1.5em;
+              &:hover {
+                color: #333332;
+              }
+            }
+          }
+        }
+      }
+      
+  }
+  #mobile-menu {
+    visibility:hidden;
+    display: none;
+  }
+@media screen and (max-width: 600px) {
+    #mainmenu {
+      visibility: hidden;
+      display: none;
+    }
+    #mobile-menu {
+        visibility:visible;
+        display: block;
+      }
+    .aboutus-bg, .our-courses-bg, .workshops-bg, .contactus-bg{
+        min-height: 148px;
+        max-height: 148px;
+        height: 148px;
+    }
+  }
+ 
+  .logo-style {
+      font-size: 12px;
+      font-weight: bold;
+      span{
+          line-height: 16px;
+      }
+  }
+
