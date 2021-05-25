@@ -1,0 +1,565 @@
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'SourceSansPro-SemiBold';
+  src: url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+}
+
+body {
+  font-family: 'SourceSansPro-Regular';
+  font-size: 18px;
+}
+
+.h1, .h2, .h3, .h5, .h6 {
+  font-family: 'SourceSansPro-SemiBold';
+  font-size: 1.7em;
+}
+
+.semi-bold {
+  font-family: 'SourceSansPro-SemiBold';
+  font-size: 18px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+p {
+  line-height: 28px;
+}
+
+.text-primary {
+  color: #3C7AFA;
+}
+
+.bg-primary {
+  background-color: #3C7AFA;
+}
+
+.user-cards-color {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.user-cards-color .user-image {
+  position: absolute;
+  z-index: 1;
+}
+
+.user-cards-color .user-image .user-name {
+  position: absolute;
+  left: 100px;
+  top: 8px;
+}
+
+.user-cards-color .background-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  z-index: 0;
+  padding: 20px;
+}
+
+.user-cards-color .background-wrapper .wrapper-holding {
+  width: calc(100% - 90px);
+  height: 226px;
+  position: absolute;
+  left: 51px;
+  top: 42px;
+  background-color: rgba(60, 122, 224, 0.3);
+}
+
+.user-cards-color .background-wrapper .wrapper-holding .height-text {
+  height: 188px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-cards-color .text-rotate {
+  position: absolute;
+  left: -15px;
+  top: 20px;
+  -webkit-transform: translate(0px, 110px) rotate(-90deg);
+          transform: translate(0px, 110px) rotate(-90deg);
+}
+
+.sanpro-20 {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 20px;
+}
+
+.sanpro-30 {
+  font-family: SourceSansPro-SemiBold;
+  font-size: 30px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: false;
+}
+
+textarea ::-webkit-input-placeholder {
+  color: black;
+}
+
+textarea :-ms-input-placeholder {
+  color: black;
+}
+
+textarea ::-ms-input-placeholder {
+  color: black;
+}
+
+textarea ::placeholder {
+  color: black;
+}
+
+.h-58 {
+  height: 50px;
+}
+
+input {
+  padding: 10px;
+}
+
+.fnt-55 {
+  font-size: 55px;
+}
+
+.dashed-line {
+  display: block;
+  height: 1px;
+  width: 100px;
+  background-color: black;
+}
+
+.text-light-grey {
+  color: #727272;
+}
+
+.mt-5 {
+  margin-top: 1em;
+}
+
+.pp-4 {
+  padding: 2em;
+}
+
+.ui-pagination li {
+  margin: 0px;
+  padding: 10px;
+}
+
+.footer {
+  font-size: 14px;
+  color: white;
+  height: auto;
+  background-color: #17172D;
+}
+
+.contact-us-bg {
+  background-image: url("../../assets/images/contactus.png");
+  height: 532px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-us-bg {
+  background-image: url("../../assets/images/aboutus.png");
+  height: 402px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-us {
+  font-size: 2em;
+}
+
+.about-us {
+  font-size: 2em;
+  height: 250px;
+}
+
+.light-blue-box {
+  background-color: #E9F0FF;
+  width: 357px;
+  height: 317px;
+}
+
+.light-blue-box-1 {
+  background-color: #F6FAFF;
+  width: 100%;
+  height: auto;
+}
+
+.bg-blue {
+  background-color: #3C7AFA;
+}
+
+.bg-blue-text {
+  color: #3C7AFA;
+}
+
+.contact-mobile {
+  color: white;
+}
+
+.contact-mobile p {
+  line-height: 20px;
+}
+
+.title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.menu-active {
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 4px;
+  top: -12px;
+  background-color: #3C7AFA;
+}
+
+.hr-line {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hrr-line {
+  display: block;
+  width: 1px;
+  height: 19px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.menu1 {
+  width: 150px;
+  position: relative;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.banner-container {
+  position: relative;
+  height: 450px;
+  margin-bottom: 10px;
+}
+
+.banner-container .banner-holder {
+  position: absolute;
+  width: 100%;
+  height: 330px;
+}
+
+.banner-container .nav-bar {
+  position: absolute;
+}
+
+#banner_list {
+  position: relative;
+}
+
+.bannerimage {
+  position: absolute;
+  height: auto;
+  width: 100%;
+}
+
+.bannerimage .bannerimage-1 {
+  background-image: url("../images/banner_1.png");
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerimage .bannerimage-2 {
+  background-image: url("../images/banner_2.png");
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerimage .bannerimage-3 {
+  background-image: url("../images/banner_3.png");
+  width: 100%;
+  height: auto;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerimage .content-1 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 50px;
+  left: 100px;
+  color: white;
+}
+
+.circle-with-number-r {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ff4357;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-with-number-m {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #c143ff;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-courses-bg {
+  background-image: url("../images/ourcourses.png");
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.workshops-bg {
+  background-image: url("../images/workshops.png");
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutus-bg {
+  background-image: url("../images/aboutus.png");
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactus-bg {
+  background-image: url("../images/contactus.png");
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-lbl {
+  display: block;
+}
+
+.cnt-display {
+  position: absolute;
+}
+
+#mobile-menu {
+  position: relative;
+  top: -199px;
+  right: 0px;
+}
+
+#mobile-menu #overlay-button {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#mobile-menu #overlay-button span {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: white;
+  position: relative;
+  display: block;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#mobile-menu #overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+
+#mobile-menu #overlay-button span:after {
+  top: 10px;
+}
+
+#mobile-menu #overlay-button span:before, #mobile-menu #overlay-button span:after {
+  height: 4px;
+  width: 35px;
+  border-radius: 2px;
+  background-color: white;
+  position: absolute;
+  content: "";
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#mobile-menu #overlay-button:hover span, #mobile-menu #overlay-button:hover span:before, #mobile-menu #overlay-button:hover span:after {
+  background: #333332;
+}
+
+#mobile-menu input[type=checkbox] {
+  display: none;
+}
+
+#mobile-menu input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+#mobile-menu input[type=checkbox]:checked ~ #overlay-button:hover span, #mobile-menu input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+}
+
+#mobile-menu input[type=checkbox]:checked ~ #overlay-button span:before {
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+          transform: rotate(45deg) translate(7px, 7px);
+  opacity: 1;
+}
+
+#mobile-menu input[type=checkbox]:checked ~ #overlay-button span:after {
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+          transform: rotate(-45deg) translate(7px, -7px);
+}
+
+#mobile-menu #overlay {
+  width: 94%;
+  background: #ec6451;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  top: 100px;
+}
+
+#mobile-menu #overlay.active {
+  visibility: visible;
+}
+
+#mobile-menu #overlay ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#mobile-menu #overlay ul li {
+  padding: 1em;
+}
+
+#mobile-menu #overlay ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+#mobile-menu #overlay ul li a:hover {
+  color: #333332;
+}
+
+#mobile-menu {
+  visibility: hidden;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #mainmenu {
+    visibility: hidden;
+    display: none;
+  }
+  #mobile-menu {
+    visibility: visible;
+    display: block;
+  }
+  .aboutus-bg, .our-courses-bg, .workshops-bg, .contactus-bg {
+    min-height: 148px;
+    max-height: 148px;
+    height: 148px;
+  }
+}
+
+.logo-style {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.logo-style span {
+  line-height: 16px;
+}
+/*# sourceMappingURL=main.css.map */
