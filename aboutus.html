@@ -13,237 +13,259 @@
 
     <section>
         <div class="container-fluid mb-4 aboutus-bg">
-            <div class="d-flex flex-column flex-sm-column flex-md-row justify-content-between p-2">
-                <div class="d-flex justify-content-center justify-content-sm-center justify-content-md-start">
-                    <img width="100px" src="./assets/images/ncepc-logo.png" alt="">
-                    <div class="d-flex flex-column text-white logo-style">
-                        <span>National</span>
-                        <span>Competative</span>
-                        <span>Examinations</span>
-                        <span>Preparation</span>
-                        <span>Center</span>
+            <div class="nav-bar container-fluid mb-4 ">
+                <div class="d-flex flex-column flex-sm-column flex-md-row justify-content-between p-2">
+                    <div class="d-flex justify-content-center justify-content-sm-center justify-content-md-start">
+                        <img width="100px" src="./assets/images/ncepc-logo.png" alt="">
+                        <div class="d-flex flex-column text-white logo-style">
+                            <span>National</span>
+                            <span>Competative</span>
+                            <span>Examinations</span>
+                            <span>Preparation</span>
+                            <span>Center</span>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center mr-2">
+                            <img class="mr-3" width="31px" height="31px" src="./assets/images/phone-call.png" alt="">
+                            <div class="d-flex flex-column contact-mobile">
+                                <p class="m-0">+91234567890</p>
+                                <p class="m-0 small sub-title">24 / 7 Helpline</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img class="mr-3" width="31px" height="31px" src="./assets/images/at.png" alt="">
+                            <div class="d-flex flex-column contact-mobile">
+                                <p class="m-0">info@ncepc.com</p>
+                                <p class="m-0 small sub-title">Drop your enquiry</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <div class="d-flex align-items-center mr-2">
-                        <img class="mr-3" width="31px" height="31px" src="./assets/images/phone-call.png" alt="">
-                        <div class="d-flex flex-column contact-mobile">
-                            <p class="m-0">+91234567890</p>
-                            <p class="m-0 small sub-title">24 / 7 Helpline</p>
-                        </div>
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="hr-line mt-2 mb-2" />
                     </div>
-                    <div class="d-flex align-items-center">
-                        <img class="mr-3" width="31px" height="31px" src="./assets/images/at.png" alt="">
-                        <div class="d-flex flex-column contact-mobile">
-                            <p class="m-0">info@ncepc.com</p>
-                            <p class="m-0 small sub-title">Drop your enquiry</p>
+                </div>
+                <ul id="mainmenu" class="text-white d-flex flex-row justify-content-between">
+                    <li class="link d-flex justify-content-between cursor-pointer">
+                        <div class="d-flex flex-column menu1">
+                            <div class="title pl-4">Home</div>
+                            <div class="sub-title pl-4">Main Page</div>
+                            <span class="menu-active"></span>
                         </div>
-        
+                        <div class="d-flex align-items-center">
+                            <span class="hrr-line"></span>
+                        </div>
+                    </li>
+                    <li  class="link d-flex justify-content-between cursor-pointer">
+                        <div class="d-flex flex-column menu1">
+                            <span class="title pl-4">About us</span>
+                            <span class="sub-title pl-4">Corperates</span>
+                            <span class="menu-active"></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="hrr-line"></span>
+            
+                        </div>
+                    </li>
+                    <li  class="link d-flex justify-content-between cursor-pointer">
+                        <div class="d-flex flex-column menu1">
+                            <div class="title pl-4">Courses offered</div>
+                            <div class="sub-title pl-4">We Offer</div>
+                            <span class="menu-active"></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="hrr-line"></span>
+                        </div>
+                    </li>
+                    <!-- <li  class="link d-flex justify-content-between cursor-pointer">
+                        <div class="d-flex flex-column menu1">
+                            <span class="title pl-4">Testimonials</span>
+                            <span class="sub-title pl-4">Online Trainings</span>
+                            <span class="menu-active"></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="hrr-line"></span>
+                        </div>
+                    </li> -->
+                   
+                    <li  class="link d-flex justify-content-between cursor-pointer">
+                        <div class="d-flex flex-column menu1">
+                            <span class="title pl-4">Contact us</span>
+                            <span class="sub-title pl-4">Get in Touch</span>
+                            <span class="menu-active"></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="hrr-line"></span>
+                        </div>
+                    </li>
+                    <li  class="link d-flex justify-content-between cursor-pointer">
+                        <div class="d-flex flex-column menu1 login-btn">
+                            <span class="title pl-4">Login</span>
+                            <span class="sub-title text-white pl-4">Get into Ncepc</span>
+                            <span class="menu-active"></span>
+                        </div>
+                    </li>
+                </ul>
+                <div id="mobile-menu">
+                    <input type="checkbox" id="overlay-input" />
+                    <label for="overlay-input" id="overlay-button"><span></span></label>
+                    <div id="overlay">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./aboutus.html">About us</a></li>
+                            <li><a href="./courses.html">Courses offered</a></li>
+                            <!-- <li><a href="./testimonials.html">Testimonials</a></li> -->
+                            <li><a href="./contactus.html">Contact us</a></li>
+                            <li><a href="https://ncepc.in">Login</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <hr class="hr-line mt-2 mb-2" />
-                </div>
-            </div>
-            <ul id="mainmenu" class="text-white d-flex flex-row justify-content-between">
-                <li class="link d-flex justify-content-between cursor-pointer">
-                    <div class="d-flex flex-column menu1">
-                        <div class="title pl-4">Home</div>
-                        <div class="sub-title pl-4">Main Page</div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <span class="hrr-line"></span>
-                        <span class="menu-active"></span>
-                    </div>
-                </li>
-                <li class="link d-flex justify-content-between cursor-pointer">
-                    <div class="d-flex flex-column menu1">
-                        <div class="title pl-4">Courses</div>
-                        <div class="sub-title pl-4">We Offer</div>
-                        <span class="menu-active"></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <span class="hrr-line"></span>
-                    </div>
-                </li>
-                <li class="link d-flex justify-content-between cursor-pointer">
-                    <div class="d-flex flex-column menu1">
-                        <span class="title pl-4">Workshops</span>
-                        <span class="sub-title pl-4">Online Trainings</span>
-                        <span class="menu-active"></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <span class="hrr-line"></span>
-                    </div>
-                </li>
-                <li class="link d-flex justify-content-between cursor-pointer">
-                    <div class="d-flex flex-column menu1">
-                        <span class="title pl-4">About us</span>
-                        <span class="sub-title pl-4">Corperates</span>
-                        <span class="menu-active"></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <span class="hrr-line"></span>
 
-                    </div>
-                </li>
-                <li class="link d-flex justify-content-between cursor-pointer">
-                    <div class="d-flex flex-column menu1">
-                        <span class="title pl-4">Contact us</span>
-                        <span class="sub-title pl-4">Get in Touch</span>
-                        <span class="menu-active"></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <span class="hrr-line"></span>
-                    </div>
-                </li>
-                <li class="link d-flex justify-content-between cursor-pointer">
-                    <div class="d-flex flex-column menu1">
-                        <span class="title pl-4">Login</span>
-                        <span class="sub-title pl-4">Get into Ncepc</span>
-                        <span class="menu-active"></span>
-                    </div>
-                </li>
-            </ul>
-            <div id="mobile-menu">
-                <input type="checkbox" id="overlay-input" />
-                <label for="overlay-input" id="overlay-button"><span></span></label>
-                <div id="overlay">
-                    <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./courses.html">Courses</a></li>
-                    <li><a href="./workshops.html">Workshops</a></li>
-                    <li><a href="./aboutus.html">About us</a></li>
-                    <li><a href="./contactus.html">Contact us</a></li>
-                    <li><a href="https://ncepc.in">Login</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center align-items-center" style="height:180px">
                <h5 id="page_header" class="h5 text-white">About us</h5> 
             </div>
         </div>
         <div class="container">
-            <!-- <div class="row mb-4 mt-4">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
-                    <h5 class="h5">We offers best Workshops</h5>
-                </div>
-                <div class="col-sm-12 col-md-12 d-flex justify-content-center mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique. Duis cursus,
-                </div>
-            </div> -->
-
-            <!-- <div class="row mb-4 mt-4">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="light-blue-box p-4">
-                        <div class="semi-bold mb-4 mt-4">Happy Students</div>
-                        <div class="d-flex align-items-center">
-                            <span class="mr-4 bg-blue-text">UPTO</span>
-                            <span class="dashed-line"></span>
-                            <span class="ml-4 fnt-55 bg-blue-text">10K+</span>
-                        </div>
-                        <div class="text-light-grey">
-                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
-                            graphic or web designs.
-                        </div>
+           
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  mb-4">
+                    <p class="p-0 text-primary semi-bold">About us</p>
+                    <div class="h6">
+                        National Competative Examination </br> Preparation Center (NCEPC)
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="light-blue-box p-4">
-                        <div class="semi-bold mb-4 mt-4">DAILY REGISTRATION</div>
-                        <div class="d-flex align-items-center">
-                            <span class="mr-4 bg-blue-text">UPTO</span>
-                            <span class="dashed-line"></span>
-                            <span class="ml-4 fnt-55 bg-blue-text">20%</span>
-                        </div>
-                        <div class="text-light-grey">
-                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
-                            graphic or web designs.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="light-blue-box p-4">
-                        <div class="semi-bold mb-4 mt-4">COURSES WE SERVE</div>
-                        <div class="d-flex align-items-center">
-                            <span class="mr-4 bg-blue-text">UPTO</span>
-                            <span class="dashed-line"></span>
-                            <span class="ml-4 fnt-55 bg-blue-text">40%</span>
-                        </div>
-                        <div class="text-light-grey">
-                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print,
-                            graphic or web designs.
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <div class="row mb-4 mt-4">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-4">
-                    <img src="./assets/images/about-the-institute.png" alt="">
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
-                    <h5 class="h5">About the Institute</h5>
-                    <p >
-                        NCEPC provides a blend of virtual and classroom learning and self-study in the form of recorded video lectures. Courses at NCEPC prepares students for their highly important NEET& JEE exams. Detailed lectures on each concept delivered by experienced faculty are a major part of the study plan at NCEPC. Other than this, by use of images, animation, practical examples, numerical and effective examples are modernized ways used at NCEPC to help students better understand the concepts. Students can study and revise each lecture by repeating it as many times as they want.
-                    </p>
-                   
-                  
-                </div>
-               
-
-            </div>
-
-            <div class="row mb-4 mt-2">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
-                    <h5 class="h5">About the Institute</h5>
-                    <p >
-                        To help students prepare well for National Level Medical & Engineering entrance exams, experienced NCEPC faculty has carefully curated the complete study material. With recorded video lectures, e-Books, and assessments, NCEPC helps students achieve their true potential. 
-                    </p>
-                    <p class="mb-0">
-                        We Design and deliver NEET & JEE programs across a variety of disciplines. Considering the importance of NEET & JEE exams we have worked upon the knowledge-base with the help of our highly qualified faculties, our research, and our training experience, to offer a rich learning experience to our students. 
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <img src="./assets/images/about-institute-2.png" alt="">
-                </div>
-            </div>
-
-            <div class="row mb-4 mt-4 mb-4">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
-                    <h5 class="h5">Our Team</h5>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
                     <p>
-                        Our team comprises highly qualified teachers with 20 plus years of professional university teaching experience. They know the mentality of the students and know how to deliver technical concepts. They do not use traditional teaching methods instead they read the minds of the students and use the strategies by which students can grasp and maintain knowledge for a long time.  
+                        With the exponential increase of competition, every student is looking to get the best opportunities to get ahead of other students. Competitive exams like NEET and JEE are great milestones for majority of the students to succeed in life.
+                    </p>
+                    <p>
+                        Understanding this, NCEPC thrives to provide all that a student may need to excel. We guarantee qualified faculty members, streamlined courses, and the best learning environment for each of our students so that they never lack behind. We at NCEPC promise to provide the complete coaching management that you desire. We work with industry experts to work on continuous improvement of our services. We regularly work to improve the coaching strategies and content advancements to help prepare our students to compete with style and ease. Our flexible educational calendar and detailed unit lectures help every student to be fully prepared for competitive examinations.
+                    </p>
+                    <p>
+                        Register your courses today at NCEPC and allow us to provide you the tools necessary to succeed in this highly competitive marketplace!
                     </p>
                 </div>
-                <!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4">
-                    <img src="./assets/images/team_1.png" alt="">
-                    <div>
-                        <p class="m-0 sanpro-20 text-center">Amila Klack</p>
-                        <p class="m-0 text-center small">Founder</p>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
+                    <img class="img-fluid" src="./assets/images/about-us-image.png" alt="">
+                </div>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-4 order-xs-1 order-sm-1 order-md-0 mb-4">
+                    <img class="img-fluid" src="./assets/images/why-choose-us.png" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-4 order-xs-0 order-sm-0 order-md-1">
+                    <p class="p-0 text-primary semi-bold mb-4">Why Choose us</p>
+                    <div class="h6">
+                        Choose NCEPC to sail through your NEET & JEE exams
+                    </div>
+                    <p>
+                        Our highly qualified group of instructors know exactly how to help our students get ready for a
+                        competitive exam! We focus on skilled mastery to help learners establish strong foundations, so
+                        there's no limit to what they can learn next!
+                    </p>
+                    <br />
+                    <ul>
+                        <li class="d-flex mb-2">
+                            <div class="circle-orange d-flex justify-content-start align-items-start mr-4">
+                                <div class="circle-with-number-r">1</div>
+                            </div>
+                            <div class="flex-grow-2">
+                                <h6 class="sanpro-20">Highly Experienced Staff</h6>
+                                <p>Instructors at NCEPC are highly qualified and experienced in their field.  They not only have great knowledge to deliver to students but also know how to perfectly transfer their knowledge to their pupils.</p>
+                            </div>
+                        </li>
+                      
+                    </ul>
+                    <button id="see_more_btn" class="btn btn-outline-primary mb-4">See More</button>
+                </div>
+            </div>
+            
+            <div class="row" id="why_choose_us_list">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4">
+                <div class="d-flex mb-2">
+                    <div class="d-flex justify-content-start align-items-start mr-4">
+                        <div class="circle-with-number-m">2</div>
+                    </div>
+                    <div class="flex-grow-2">
+                        <h6 class="sanpro-20">Unique Study Methodology</h6>
+                        <p>We employ unique learning methods to help truly understand the concepts and prepare them to beat others in the competitive exam they plan to appear. We don't force cramming but help them visualize the concepts with our focus on the practical explanation of concepts </p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4">
-                    <img src="./assets/images/team_2.png" alt="">
-                    <div>
-                        <p class="m-0 sanpro-20 text-center">Amila Klack</p>
-                        <p class="m-0 text-center small">Founder</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4">
+                    <div class="d-flex mb-2">
+                        <div class="d-flex justify-content-start align-items-start mr-4">
+                            <div class="circle-with-number-r">3</div>
+                        </div>
+                        <div class="flex-grow-2">
+                            <h6 class="sanpro-20">Strategically oriented syllabus</h6>
+                            <p>We understand it is not only important to focus on only what we teach but also how we teach. That why we work with experts to design the syllabus as per needs to clear the NEET exam with flying colors. With the years of experience and with the help of qualified instructors we guarantee we have got it all covered for you when it comes to competitive exam preparation.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mt-4">
-                    <img src="./assets/images/team3.png" alt="">
-                    <div>
-                        <p class="m-0 sanpro-20 text-center">Amila Klack</p>
-                        <p class="m-0 text-center small">Founder</p>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4">
+                    <div class="d-flex mb-2">
+                        <div class="d-flex justify-content-start align-items-start mr-4">
+                            <div class="circle-with-number-m">4</div>
+                        </div>
+                        <div class="flex-grow-2">
+                            <h6 class="sanpro-20">More than Tens and Thousands of Questions available for practice </h6>
+                            <p>"Practice makes a person perfect" Right?  Well, we follow it to the letter. We help our students get a solid grip on the concepts and problem solving with the help of a perfectly designed flexible practice platform. Don't miss out on the opportunity to get your hands on these amazing practice materials that have helped thousands of students succeed.</p>
+                        </div>
                     </div>
-                </div> -->
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4">
+                    <div class="d-flex mb-2">
+                        <div class="d-flex justify-content-start align-items-start mr-4">
+                            <div class="circle-with-number-r">5</div>
+                        </div>
+                        <div class="flex-grow-2">
+                            <h6 class="sanpro-20">Personalized attention </h6>
+                            <p>Our teachers are fully trained to understand student’s psychology and give personalized attention to each student and guide them according to their learning capabilities so that no student lacks behind under their supervision. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4">
+                    <div class="d-flex mb-2">
+                        <div class="d-flex justify-content-start align-items-start mr-4">
+                            <div class="circle-with-number-m">6</div>
+                        </div>
+                        <div class="flex-grow-2">
+                            <h6 class="sanpro-20">Regular Practice</h6>
+                            <p>With regular examinations, we provide a great opportunity to our students to keep their learning skills in check and prepare them to deal with the stress of an important exam. With our carefully designed mock test, regular assessments, chapter-wise quizzes, and online test series our students get in the examination hall all prepared to beat other students in the competition. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mt-4">
+                    <div class="d-flex mb-2">
+                            <div class="d-flex justify-content-start align-items-start mr-4">
+                                <div class="circle-with-number-r">7</div>
+                         </div>
+                        <div class="flex-grow-2">
+                            <h6 class="sanpro-20">Revision Sessions</h6>
+                            <p>We do not want our students to miss any learning step due to any reason. We offer revision sessions after completion of courses so that any student who missed classes for any unit or couldn't get the exams can get the opportunity to take them again. We ensure that there is no room for error in our teaching process. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        
+        <div class="container-fluid bg-primary">
+        <div class="row mb-4 mt-4 mb-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                <h5 class="h5">Our Team</h5>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center">
+                <p >
+                    Our team comprises highly qualified teachers with 20 plus years of professional university teaching experience. They know the mentality of the students and know how to deliver technical concepts. They do not use traditional teaching methods instead they read the minds of the students and use the strategies by which students can grasp and maintain knowledge for a long time.  
+                </p>
             </div>
         </div>
+    </div>
         <iframe src="./footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
     </section>
@@ -260,7 +282,7 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        var m = new Main(3);
+        var m = new Main(1);
     </script>
 </body>
 

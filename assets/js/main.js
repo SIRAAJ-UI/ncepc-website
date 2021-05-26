@@ -3,7 +3,6 @@ function Main(_id) {
     toogle = false;
     const why_choose_us_list = $("#why_choose_us_list");
     TweenLite.set(why_choose_us_list, { css: { display:"none" }});
-
     const see_more_btn = $("#see_more_btn");
     see_more_btn.click(function(){
         if(this.toggle === undefined){
@@ -17,9 +16,6 @@ function Main(_id) {
             TweenLite.set(why_choose_us_list, { css: { display:"flex",opacity:0 }});
             TweenLite.to(why_choose_us_list, { opacity:1, duration:1 });
         }
-        
-
-
       });
   
     const menuactive = $("#mainmenu li");
@@ -43,42 +39,42 @@ function CreateBanner(){
         TweenLite.set(bannerlist[i],{opacity:0});
         TweenLite.set(content,{opacity:0});
     }
-    var tl = gsap.timeline({repeat:2})
+    var tl = gsap.timeline({repeat:10})
+    //timeline 1
     tl.to(bannerlist[0], {opacity: 1, duration: 1});
     TweenLite.set(content[0],{x:-300})
     TweenLite.set(content[1],{x:-300})
     TweenLite.set(content[2],{x:-300})
     TweenLite.set(content[3],{scale:0})
-
+    tl.to(content[3], {scale:1,opacity: 1,duration: 1,});
     tl.to(content[0], {y:0,x:0,opacity: 1, duration: 1});
     tl.to(content[1], {y:0,x:0,opacity: 1, duration: 1});
     tl.to(content[2], {y:0,x:0,opacity: 1,duration: 1});
-    tl.to(content[3], {scale:1,opacity: 1,duration: 1});
+    tl.to(content[3], {scale:1,opacity: 1,duration: 1,delay:4});
 
-    tl.to(bannerlist[1], {opacity: 1, duration: 1,delay:2});
+    //timeline 2
+    tl.to(bannerlist[1], {opacity: 1, duration: 1});
     TweenLite.set(content[4],{x:-300})
     TweenLite.set(content[5],{x:-300})
     TweenLite.set(content[6],{x:-300})
     TweenLite.set(content[7],{scale:0})
-
-
+    tl.to(content[7], {scale:1,opacity: 1, duration: 1});
     tl.to(content[4], {y:0,x:0,opacity: 1, duration: 1});
     tl.to(content[5], {y:0,x:0,opacity: 1,duration: 1});
     tl.to(content[6], {y:0,x:0,opacity: 1, duration: 1});
-    tl.to(content[7], {scale:1,opacity: 1, duration: 1});
+    tl.to(content[7], {scale:1,opacity: 1,duration: 1,delay:4});
 
-    tl.to(bannerlist[2], {opacity: 1, duration: 1,delay:2});
+    //timeline 3
+    tl.to(bannerlist[2], {opacity: 1, duration: 1});
     TweenLite.set(content[8],{x:-300})
     TweenLite.set(content[9],{x:-300})
     TweenLite.set(content[10],{x:-300})
-    TweenLite.set(content[11],{scale:0})
-
-
+    // TweenLite.set(content[11],{scale:0})
+    tl.to(content[11], {scale:1,opacity: 1, duration: 1});
     tl.to(content[8], {y:0,x:0,opacity: 1, duration: 1});
     tl.to(content[9], {y:0,x:0,opacity: 1,duration: 1});
     tl.to(content[10], {y:0,x:0,opacity: 1, duration: 1});
-    tl.to(content[11], {scale:1,opacity: 1, duration: 1,delay:2});
-    tl.to(content[11], {scale:1,opacity: 1, duration: .2});
+    tl.to(content[11], {scale:1,opacity: 1, duration: 1,delay:4});
 
 }
 
@@ -96,6 +92,7 @@ let banner = new CreateBanner();
     reset_buttons();
     function _onComplete(_url) {
         let url = String(_url).toLowerCase();
+        console.log(url)
         if(url === "home"){
             url = "index"
         }
@@ -104,6 +101,9 @@ let banner = new CreateBanner();
         }
         if(url === "contact us"){
             url = "contactus"
+        }
+        if(url === "courses offered") {
+            url = "courses"
         }
         if(url === "login") {
             window.open("https://ncepc.in/",'_blank');
@@ -146,5 +146,7 @@ let banner = new CreateBanner();
         onComplete:_onComplete(url)
        });
     })
+
+   
 })(jQuery);
 

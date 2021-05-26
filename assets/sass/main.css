@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'SourceSansPro-Regular';
   src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
@@ -254,8 +255,16 @@ input {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.ul-list {
+  list-style: none;
+}
+
+.ul-list li:before {
+  content: '✓';
+}
+
 .menu1 {
-  width: 150px;
+  width: 188px;
   position: relative;
 }
 
@@ -561,5 +570,25 @@ input {
 
 .logo-style span {
   line-height: 16px;
+}
+
+.login-btn {
+  background-color: #FF8C00;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 165, 0, 0.5);
+}
+
+form .error {
+  color: #ff0000;
+}
+
+.article-reference {
+  margin-top: 15px;
+}
+
+.article-reference a {
+  color: #e67e22;
 }
 /*# sourceMappingURL=main.css.map */
