@@ -105,6 +105,9 @@ let banner = new CreateBanner();
         if(url === "courses offered") {
             url = "courses"
         }
+        if(url === "upcoming batches") {
+            url = "upcoming"
+        }
         if(url === "login") {
             window.open("https://ncepc.in/",'_blank');
         } else {

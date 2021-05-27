@@ -337,7 +337,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
   bottom: 50px;
-  left: 100px;
+  padding-left: 5%;
   color: white;
 }
 
@@ -550,11 +550,11 @@ input {
 @media screen and (max-width: 600px) {
   #mainmenu {
     visibility: hidden;
-    display: none;
+    display: none !important;
   }
   #mobile-menu {
     visibility: visible;
-    display: block;
+    display: block !important;
   }
   .aboutus-bg, .our-courses-bg, .workshops-bg, .contactus-bg {
     min-height: 148px;
